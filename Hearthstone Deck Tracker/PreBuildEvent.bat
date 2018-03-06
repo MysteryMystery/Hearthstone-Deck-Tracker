@@ -62,10 +62,10 @@ echo.
 
 if exist "%SolutionDir%HDT-Localization" (
   echo Updating "%SolutionDir%HDT-Localization" to origin/master
-  git -C "%SolutionDir%HDT-Localization" fetch
-  git -C "%SolutionDir%HDT-Localization" reset --hard origin/master
+  git -C "%SolutionDir%HDT-Localization" -b collection fetch
+  git -C "%SolutionDir%HDT-Localization" -b collection reset --hard origin/master
 ) else (
-  git clone --depth 1 https://github.com/HearthSim/HDT-Localization.git "%SolutionDir%HDT-Localization"
+  git clone --depth 1 -b collection https://github.com/HearthSim/HDT-Localization.git "%SolutionDir%HDT-Localization"
 )
 
 echo.
