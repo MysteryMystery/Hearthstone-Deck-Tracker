@@ -1,7 +1,7 @@
 ## __Release vNext__
 
 __New__:
-- Added support to sync the collection with HSReplay.net.
+- Added support to upload your collection to HSReplay.net.
 
 
 ## __Release v1.5.13 - 2018-03-12__
